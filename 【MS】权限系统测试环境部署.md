@@ -13,4 +13,4 @@ netstat -anp|grep node查看端口，kill掉3030端口，并在build文件夹下
 二、am-auth-gateway
 同样的获取包方法
 获取包后，进入build/config/config.test.js文件修改端口为6789，将IP地址中的26改为34，:wq保存退出
-kill6789端口再手动启
+kill6789端口再nohup node server.js --env test &手动启
